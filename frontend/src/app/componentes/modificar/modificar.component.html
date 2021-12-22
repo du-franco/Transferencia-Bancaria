@@ -1,0 +1,31 @@
+<h5>Edição de Transferência</h5>
+
+<div class="container">
+  <div class="col">
+    <form>
+      <div class="mb-1">
+        <label for="" class="form-label">
+          Nome do Beneficiário
+        </label>
+        <input [(ngModel)]="tarefa.nome" type="text" class="form-control" name="nome">
+      </div>
+      <div class="mb-1">
+        <label for="" class="form-label">
+          Valor da Transferência
+        </label>
+        <input [(ngModel)]="tarefa.valor" type="text" class="form-control" name="valor">
+      </div>
+      <div class="mb-1">
+        <label for="" class="form-label">
+          Número da Conta
+        </label>
+        <input [(ngModel)]="tarefa.contaCliente" type="text" class="form-control" name="contaCliente">
+      </div>
+      <div class="mb-5">
+        <button (click)="modificar()" class="btn btn-secondary" type="button">
+          Editar
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

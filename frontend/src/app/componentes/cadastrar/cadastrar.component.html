@@ -1,0 +1,31 @@
+<h5>Cadastro de Transferência</h5>
+
+<div class="container">
+  <div class="col">
+    <form>
+      <div class="mb-1">
+        <label for="" class="form-label">
+          Nome do Beneficiário
+        </label>
+        <input [(ngModel)]= "tarefa.nome" type="text" class="form-control" name="descricao">
+      </div>
+      <div class="mb-1">
+        <label for="" class="form-label">
+          Valor da Transferência
+        </label>
+        <input [(ngModel)]= "tarefa.valor" type="text" class="form-control" name="valor">
+      </div>
+      <div class="mb-1">
+        <label for="" class="form-label">
+          Número da Conta
+        </label>
+        <input [(ngModel)]= "tarefa.contaCliente" type="text" class="form-control" name="contaCliente">
+      </div>
+      <div class="mb-5">
+        <button (click)= 'adicionar()' class="btn btn-primary">
+          Adicionar
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
